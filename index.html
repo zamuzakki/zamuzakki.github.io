@@ -39,6 +39,7 @@
 							<li class="active"><a class="scrolly" href="#main">About Me</a></li>
 							<li><a class="scrolly" href="#skills">Skills</a></li>
 							<li><a class="scrolly" href="#projects">Projects</a></li>
+							<li><a class="scrolly" href="#footer">Contact Me</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/zulfikarmuzakki/" class="icon fa-linkedin"><span class="label">Instagram</span></a></li>
@@ -49,7 +50,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- Intro -->
 
 						<article id="about-me" class="post featured">
 							<header class="major">
@@ -63,21 +64,105 @@
 								<img src="images/my_photo.jpg" class="center" alt="" style="width:25vw;"/>
 							</a>
 							<ul class="actions special">
-								<li><a href="#" class="button large">Check it out</a></li>
+								<li><a href="#skills" class="button large scrolly">View Skills</a></li>
+								<li><a href="#projects" class="button large scrolly">Check My Projects</a></li>
 							</ul>
 						</article>
 
+						<!-- Skills -->
+							<section id="skills">
+								<div id="slick-skills">
+									<div>
+										<article>
+											<header style="text-align: center;">
+												<h2>Backend</h2>
+											</header>
+											<div class="project-images">
+												<div class="align-center">
+													<img src="images/skills/backend/python.png" alt="" class="icon-center"/>
+													<h3>Python</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/backend/django.png" alt="" class="icon-center"/>
+													<h3>Django</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/backend/ubuntu.png" alt="" class="icon-center"/>
+													<h3>Ubuntu Linux</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/backend/rest-api.png" alt="" class="icon-center"/>
+													<h3>REST API</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/backend/postgresql.png" alt="" class="icon-center"/>
+													<h3>PostgreSQL</h3>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div>
+										<article>
+											<header style="text-align: center;">
+												<h2>Backend</h2>
+											</header>
+											<div class="project-images">
+												<div class="align-center">
+													<img src="images/skills/frontend/html.png" alt="" class="icon-center"/>
+													<h3>HTML</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/frontend/javascript.png" alt="" class="icon-center"/>
+													<h3>Javascript</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/frontend/css.png" alt="" class="icon-center"/>
+													<h3>CSS</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/frontend/jquery.png" alt="" class="icon-center"/>
+													<h3>Jquery</h3>
+												</div>
+												<div class="align-center">
+													<img src="images/skills/frontend/bootstrap.png" alt="" class="icon-center"/>
+													<h3>Bootstrap</h3>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div>
+										<article>
+											<header style="text-align: center;">
+												<h2>Version Control</h2>
+											</header>
+											<div>
+												<div class="align-center">
+													<img src="images/skills/versioning/git.png" alt="" class="icon-center"/>
+													<h3>GIT</h3>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
 
-						<!-- Posts -->
+								<ul class="actions special">
+									<li><button type="button" id="prev-skill">Prev. Skill</button></li>
+									<li><button type="button" id="next-skill">Next. Skill</button></li>
+								</ul>
+
+							</section>
+						<!-- Footer -->
+
+						<!-- Projects -->
 							<section id="projects">
-								<div class="slick">
+								<div id="slick-projects">
 									<div>
 										<article>
 											<header style="text-align: center;">
 												<h2>SISDM Fasilkom UI</h2>
 											</header>
 											<div class="project-images">
-												<div><img src="images/projects/sisdm/lembur_ajukan.png" alt=""/ class="image-center"></div>
+												<div><img src="images/projects/sisdm/lembur_ajukan.png" alt="" class="image-center"/></div>
 												<div><img src="images/projects/sisdm/lembur_lemburunit.png" alt=""  class="image-center"/></div>
 												<div><img src="images/projects/sisdm/angkakredit_dashboard_1.png" alt="" class="image-center"/></div>
 												<div><img src="images/projects/sisdm/angkakredit_dashboard_chart.png" alt="" class="image-center"/></div>
@@ -96,12 +181,12 @@
 												<h2>API Fasilkom UI</h2>
 											</header>
 											<div class="project-images">
-												<div><img src="images/pic01.jpg" alt="" class="image-center"/></div>
+												<div><img src="images/projects/csapi/csapi.jpg" alt="" class="image-center"/></div>
 											</div>
 											<p>
 												Internal web application API for Faculty of Computer Science, Universitas Indonesia. 
 												Initially built for other application, I then added functionalities for HR Information System 
-												model that I created. (Screenshot is not shown)
+												model that I created. (Screenshot is made blurred)
 											</p>
 										</article>
 									</div>
@@ -125,12 +210,10 @@
 										</article>
 									</div>
 								</div>
-								<div class="center">
-									<div class="custom">
-										<button type="button" id="prev">Prev. Project</button>
-										<button type="button" id="next">Next. Project</button>
-									</div>
-								</div>
+								<ul class="actions special">
+									<li><button type="button" id="prev-project">Prev. Project</button></li>
+									<li><button type="button" id="next-project">Next. Project</button></li>
+								</ul>
 							</section>
 						<!-- Footer -->
 					</div>
@@ -177,18 +260,29 @@
 			<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$('.slick').slick({
-						nextArrow: '#next',
-  						prevArrow: '#prev',
+					$('#slick-skills').slick({
+						nextArrow: '#next-skill',
+  						prevArrow: '#prev-skill',
 					});
+
+					$('#slick-projects').slick({
+						nextArrow: '#next-project',
+  						prevArrow: '#prev-project',
+					});
+
 					$('.project-images').slick({
 						nextArrow: '<i class="fa fa-arrow-right"></i>',
   						prevArrow: '<i class="fa fa-arrow-left"></i>',
 					});
-					let buttonWidth = $('#prev').outerWidth() + $('#next').outerWidth();
+
+					let buttonWidth = $('#prev-project').outerWidth() + $('#next-project').outerWidth();
 					let divWidth = $('.custom').outerWidth();
 					let left = (divWidth - buttonWidth) / 2;
-					$('#prev').css('margin-left',left);
+					$('#prev-project').css('margin-left',left);
+
+					buttonWidth = $('#prev-skill').outerWidth() + $('#next-skill').outerWidth();
+					left = (divWidth - buttonWidth) / 2;
+					$('#prev-skill').css('margin-left',left);
 				});
 			</script>
 

@@ -4664,7 +4664,14 @@ input, select, textarea {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-  }
+}
+
+.icon-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
 
 .fa-arrow-right{
     position: absolute;
